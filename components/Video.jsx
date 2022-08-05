@@ -119,10 +119,12 @@ const Video = ({
         width={1080}
         height={720}
         ref={videoRef}
+        controls={false}
         className="w-screen h-full object-fill lg:object-none"
         onClick={handleVideo}
         src={videoUrl}
         loop
+        disableRemotePlayback
       ></video>
       <div className="h-2/5 lg:h-2/4 justify-around flex flex-col mb-32 mr-3 text-right absolute right-0 bottom-0">
         <span>

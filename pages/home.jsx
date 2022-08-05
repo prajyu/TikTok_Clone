@@ -84,7 +84,9 @@ const User = () => {
               );
             })}
         </div>
-        <HomeNav />
+        <div className="absolute bottom-0 left-0">
+          <HomeNav />
+        </div>
       </div>
     );
   }
