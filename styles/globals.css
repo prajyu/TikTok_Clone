@@ -1,4 +1,4 @@
-@import url(//db.onlinewebfonts.com/c/e87eabbe2a0f331ae6b9df02814577b9?family=Futura+Maxi);
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,9 +8,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Futura Maxi", -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
+  font-family: "Heebo", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
