@@ -14,7 +14,7 @@ const HomeNav = () => {
   };
 
   return (
-    <>
+    <div className="absolute lg:bottom-0 lg:left-0">
       <div className="w-screen bg-[#000] h-16 absolute bottom-0">
         <div className="flex w-full h-full justify-around itmes-center">
           <button onClick={() => router.push("/home")}>
@@ -73,7 +73,7 @@ const HomeNav = () => {
         </div>
       </div>
       <UploadForm ref={uploadRef} />
-    </>
+    </div>
   );
 };
 

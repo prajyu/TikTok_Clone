@@ -46,7 +46,7 @@ const User = () => {
 
   if (status === "authenticated") {
     return (
-      <div className="lg:flex lg:justify-center lg:items-center h-screen">
+      <div className="lg:flex lg:justify-center lg:items-center h-screen overflow-hidden">
         <div
           className="w-screen h-screen overflow-scroll snap-mandatory snap-y"
           ref={videoContainerRef}
@@ -84,9 +84,8 @@ const User = () => {
               );
             })}
         </div>
-        <div className="absolute bottom-0 left-0">
-          <HomeNav />
-        </div>
+
+        <HomeNav />
       </div>
     );
   }

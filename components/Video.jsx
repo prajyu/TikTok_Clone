@@ -64,13 +64,15 @@ const Video = ({
       videoId,
       liked: like,
     });
-    let response = await fetch("/api/database/like", {
-      method: "post",
-      headers: {
-        "content-type": "application/json",
-      },
-      body,
-    });
+    let response = await (
+      await fetch("/api/database/like", {
+        method: "post",
+        headers: {
+          "content-type": "application/json",
+        },
+        body,
+      })
+    ).json();
   };
 
   let handleVideo = () => {
@@ -125,7 +127,7 @@ const Video = ({
         onClick={handleVideo}
         src={videoUrl}
         loop
-        playsinline
+        playsinline={true}
         disableRemotePlayback={true}
       ></video>
       <div className="h-2/5 lg:h-2/4 justify-around flex flex-col mb-32 mr-3 text-right absolute right-0 bottom-0">
