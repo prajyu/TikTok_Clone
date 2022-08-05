@@ -46,7 +46,7 @@ const User = () => {
 
   if (status === "authenticated") {
     return (
-      <div className="lg:flex lg:justify-center lg:items-center ">
+      <div className="lg:flex lg:justify-center lg:items-center h-screen">
         <div
           className="w-screen h-screen overflow-scroll snap-mandatory snap-y"
           ref={videoContainerRef}

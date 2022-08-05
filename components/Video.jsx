@@ -38,6 +38,7 @@ const Video = ({
   useEffect(() => {
     setLikeCount(likes);
     setLike(liked);
+    videoRef.current.disableRemotePlayback = true;
   }, [likes, liked]);
 
   useEffect(() => {
@@ -124,7 +125,8 @@ const Video = ({
         onClick={handleVideo}
         src={videoUrl}
         loop
-        disableRemotePlayback
+        playsinline
+        disableRemotePlayback={true}
       ></video>
       <div className="h-2/5 lg:h-2/4 justify-around flex flex-col mb-32 mr-3 text-right absolute right-0 bottom-0">
         <span>
