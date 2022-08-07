@@ -16,7 +16,6 @@ let main = async () => {
     await client.connect();
     const db = client.db(dbName);
     collection = db.collection("videos");
-
     //  const deleteResult = await collection.deleteMany({});
   } else {
     const client = new MongoClient(url);
@@ -81,7 +80,6 @@ const getThree = async () => {
       .aggregate([{ $sample: { size: 3 } }])
       .toArray();
   }
-
   return findResult;
 };
 

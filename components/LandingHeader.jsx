@@ -6,7 +6,7 @@ import Image from "next/image";
 const LandingHeader = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center py-20">
-      <h1 className="text-6xl  md:text-8xl font-bold ml-3 text-gray-900">
+      <h1 className="text-6xl  md:text-8xl space-y-5 font-bold ml-3 text-gray-900">
         <span className="w-full block lg:contents mb-3">Make</span>
 
         <span className="relative w-full h-full">
