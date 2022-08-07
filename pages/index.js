@@ -1,10 +1,12 @@
-import { useRouter } from "next/router";
 import Landing from "../components/Landing";
+import Head from "next/head";
 
 export default function Home() {
-  const route = useRouter();
   return (
     <div>
+      <Head>
+        <title>Tik Tok Clone</title>
+      </Head>
       <Landing />
     </div>
   );

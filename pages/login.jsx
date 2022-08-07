@@ -1,9 +1,13 @@
 import { signIn, getSession } from "next-auth/react";
 import NavBar from "../components/Navbar";
+import Head from "next/head";
 
 const login = () => {
   return (
     <>
+      <Head>
+        <title>Tik Tok Clone</title>
+      </Head>
       <NavBar />
       <div className="w-screen h-screen flex flex-col justify-center items-center">
         <span className="text-4xl lg:text-5xl text-center text-gray-800 mb-5 leading-normal">

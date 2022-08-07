@@ -1,7 +1,8 @@
 import { getSession, useSession } from "next-auth/react";
 import Video from "../components/Video";
 import HomeNav from "../components/HomeNav";
-import { useState, useRef, useEffect, useMemo } from "react";
+import Head from "next/head";
+import { useState, useRef, useEffect } from "react";
 
 const User = () => {
   const { data: session, status } = useSession();
@@ -47,6 +48,9 @@ const User = () => {
   if (status === "authenticated") {
     return (
       <div className="lg:flex lg:justify-center lg:items-center h-screen overflow-hidden">
+        <Head>
+          <title>Tik Tok Clone</title>
+        </Head>
         <div
           className="w-screen h-screen overflow-scroll snap-mandatory snap-y"
           ref={videoContainerRef}
