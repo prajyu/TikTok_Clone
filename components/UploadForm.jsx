@@ -61,7 +61,7 @@ const UploadForm = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="w-full h-full rounded-lg text-black top-[40px] absolute bg-white translate-y-full  hidden"
+      className="w-full h-screen rounded-lg text-black top-[40px] absolute bg-white translate-y-full  hidden"
     >
       <div className="mt-10 p-4 ">
         <h1 className="text-4xl leading-wide">
